@@ -47,6 +47,10 @@ button {
   cursor: pointer;
   text-align: center;
 }
+
+button:hover {
+  background: var(--primary-dark);
+}
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.015)),
     url(../images/image-hero-desktop.jpg);
@@ -90,7 +94,9 @@ body {
 .mobile--links {
   display: none;
 }
-
+.header .header--links li:hover {
+  text-decoration: underline;
+}
 @media screen and (max-width: 768px) {
   body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.015)),
@@ -192,20 +198,43 @@ body {
   margin-top: 3rem;
 }
 .top .top--buttons .top__one {
-  padding: 1.5rem 3rem;
+  padding: 2rem 3rem;
 }
 
 .top .top--buttons .top__two {
   gap: 1.5rem;
-  padding: 0.1rem 1.5rem 0.1rem 0.1rem;
+  padding: 0.15rem 2rem 0.1rem 0.15rem;
   background: hsla(0, 0%, 48%, 0.1);
 }
 
-#bookmark {
-  width: 5rem;
-  font-weight: 500;
+/* ---- bookmarked class! ----- */
+.active {
+  background: hsla(176, 50%, 47%, 0.2);
+  gap: 1.5rem;
+  padding: 0.15rem 2rem 0.1rem 0.15rem;
 }
+.active #bookmarkOuter {
+  fill: var(--primary-moderate);
+}
+.active #bookmarkInner {
+  fill: #fff;
+}
+.active #bookmark__text {
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+.active:hover #bookmark__text {
+  color: var(--primary-dark) !important;
+}
+/* ----End of bookmarked class! */
 
+.top .top--buttons .top__two:hover #bookmarkOuter {
+  opacity: 0.7;
+}
+.top .top--buttons .top__two:hover #bookmark__text {
+  color: var(--black);
+  font-weight: 700;
+}
 @media screen and (max-width: 768px) {
   .callouts {
     top: 145rem;
@@ -258,9 +287,6 @@ body {
   .top .top--buttons .top__two {
     padding: 0;
   }
-  #bookmark {
-    width: auto;
-  }
 }
 
 @media screen and (max-width: 400px) {
@@ -271,7 +297,7 @@ body {
 
 @media screen and (max-width: 395px) {
   .top .top--buttons .top__one {
-    padding: 2rem 3rem;
+    padding: 2rem 3.5rem;
   }
   .callouts .top {
     padding: 1rem;
@@ -414,7 +440,6 @@ body {
     align-items: flex-start;
   }
 }
-
 
 /* .callouts .bottom .bottom--card__3{
 

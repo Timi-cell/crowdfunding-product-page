@@ -23,3 +23,13 @@ window.addEventListener("click", (event) => {
   }
 });
 
+// For the Bookmark Button
+
+document.querySelector("#bookmark-button").addEventListener("click", () => {
+  let bookmark = document.querySelector("#bookmark-button");
+  bookmark.classList.toggle("active");
+  let bookmarkText = document.querySelector("#bookmark__text").textContent;
+  bookmarkText === "Bookmark"
+    ? (document.querySelector("#bookmark__text").textContent = "Bookmarked")
+    : (document.querySelector("#bookmark__text").textContent = "Bookmark");
+});
