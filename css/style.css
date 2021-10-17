@@ -208,11 +208,11 @@ body {
 
 @media screen and (max-width: 768px) {
   .callouts {
-    top: 65rem;
+    top: 60rem;
     width: 100%;
     padding: 0 3rem;
   }
-  .callouts .top {
+  .top {
     padding: 2rem;
   }
 }
@@ -230,7 +230,7 @@ body {
 }
 @media screen and (max-width: 400px) {
   .top .top--buttons .top__one {
-    padding: 1.9rem;
+    padding: 1.8rem;
   }
 }
 
@@ -239,19 +239,20 @@ body {
     padding: 2rem 3rem;
   }
   .callouts .top {
-    padding: 3rem;
+    padding: 1rem;
   }
   .top .top--buttons {
     flex-direction: column;
     gap: 1.5rem;
   }
 
-  /* .top .top--buttons .top__two p {
+  .top .top--buttons .top__two p {
     display: block;
   }
   .top .top--buttons .top__two {
-    padding: 0.1rem 1.5rem 0.1rem 0.1rem;
-  } */
+    padding: 0.1rem 2.5rem 0.1rem 0.1rem;
+    gap: 3.5rem;
+  }
 }
 
 /* reuseable style */
@@ -300,7 +301,6 @@ body {
   .middle .middle--contents {
     flex-direction: column;
     gap: 3rem;
-    padding: 2rem;
   }
   .middle .middle--contents {
     text-align: center;
@@ -323,7 +323,6 @@ body {
     margin-left: 0;
   }
 }
-
 /* .attribution {
   font-size: 11px;
   text-align: center;
