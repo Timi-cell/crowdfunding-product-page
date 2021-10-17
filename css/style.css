@@ -16,6 +16,7 @@
 html {
   font-size: 62.5%;
   user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a {
@@ -57,14 +58,16 @@ body {
   position: relative;
 }
 
-/* --------- HEADER SECTION--------- */
-
-.header {
+.flex {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+/* --------- HEADER SECTION--------- */
+
+.header {
   padding: 4rem 8rem;
   gap: 2rem;
   color: #fff;
@@ -111,8 +114,9 @@ body {
     padding: 2rem;
     height: 100%;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.6));
+    background: linear-gradient(rgba(0, 0, 0, 0.005), rgba(0, 0, 0, 0.6));
     font-weight: 700;
+    z-index: 2;
   }
 
   .mobile--links {
@@ -180,11 +184,6 @@ body {
 }
 
 .top .top--buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
   margin-top: 3rem;
 }
 .top .top--buttons .top__one {
@@ -192,11 +191,6 @@ body {
 }
 
 .top .top--buttons .top__two {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
   gap: 1.5rem;
   padding: 0.1rem 1.5rem 0.1rem 0.1rem;
   background: hsla(0, 0%, 48%, 0.1);
@@ -236,11 +230,11 @@ body {
 }
 @media screen and (max-width: 400px) {
   .top .top--buttons .top__one {
-    padding: 1.5rem;
+    padding: 1.9rem;
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 395px) {
   .top .top--buttons .top__one {
     padding: 2rem 3rem;
   }
@@ -265,8 +259,27 @@ body {
   margin-top: 2.5rem;
 }
 
+.middle .middle--contents {
+  gap: 1rem;
+  text-align: left;
+}
+.middle .middle--contents h2 {
+  font-size: 3rem;
+}
+.middle .middle--contents div {
+  line-height: 1.5;
+  flex-grow: 1;
+}
 
+.middle .middle--contents div:nth-child(1),
+.middle .middle--contents div:nth-child(2) {
+  border-right: 1px solid var(--darkGray);
+}
 
+.middle .middle--contents div:nth-child(2),
+.middle .middle--contents div:nth-child(3) {
+  margin-left: 3rem;
+}
 .callouts .middle .middle--loader {
   width: 100%;
   height: 1.5rem;
@@ -283,7 +296,31 @@ body {
   border-radius: 3rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 615px) {
+  .middle .middle--contents {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .middle .middle--contents {
+    text-align: center;
+  }
+
+  .middle .middle--contents div {
+    line-height: 1.5;
+    flex-grow: initial;
+  }
+
+  .middle .middle--contents div:nth-child(1),
+  .middle .middle--contents div:nth-child(2) {
+    border-right: 0;
+    border-bottom: 1px solid var(--darkGray);
+    padding-bottom: 2rem;
+  }
+
+  .middle .middle--contents div:nth-child(2),
+  .middle .middle--contents div:nth-child(3) {
+    margin-left: 0;
+  }
 }
 /* .attribution {
   font-size: 11px;

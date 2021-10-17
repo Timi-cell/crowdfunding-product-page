@@ -11,3 +11,14 @@ menuBar.addEventListener("click", () => {
     document.getElementById("mobileLinks").style.display = "none";
   }
 });
+
+window.addEventListener("click", (event) => {
+  if (
+    event.target === document.getElementById("modal") ||
+    event.target === document.getElementsByTagName("header")[0]
+  ) {
+    menuBar.setAttribute("src", "./images/icon-hamburger.svg");
+    document.getElementById("modal").style.display = "none";
+    document.getElementById("mobileLinks").style.display = "none";
+  }
+});
