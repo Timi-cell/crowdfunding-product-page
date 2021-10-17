@@ -12,6 +12,7 @@ menuBar.addEventListener("click", () => {
   }
 });
 
+localStorage.setItem("favorites", "hey");
 window.addEventListener("click", (event) => {
   if (
     event.target === document.getElementById("modal") ||
