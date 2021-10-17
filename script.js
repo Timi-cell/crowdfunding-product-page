@@ -22,3 +22,4 @@ window.addEventListener("click", (event) => {
     document.getElementById("mobileLinks").style.display = "none";
   }
 });
+

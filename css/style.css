@@ -17,6 +17,7 @@ html {
   font-size: 62.5%;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -53,7 +54,7 @@ body {
   background-size: cover;
   background-position: top;
   font-family: "Commissioner", sans-serif;
-  height: 15%;
+  height: 100%;
   font-size: 1.5rem;
   position: relative;
 }
@@ -94,7 +95,7 @@ body {
   body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.015)),
       url(../images/image-hero-mobile.jpg);
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 
   .header {
@@ -161,29 +162,33 @@ body {
 /* -----  CALLOUTS SECTION -----  */
 .callouts {
   position: absolute;
-  top: 50rem;
+  top: 100rem;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 65rem;
 }
 
+/* ------- Top Callout ------- */
 #mastercraft {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .callouts .top,
-.callouts .middle {
+.callouts .middle,
+.callouts .bottom {
   border-radius: 1.5rem;
   padding: 3rem;
   background: #fff;
   text-align: center;
-  box-shadow: 0px 0px 7px -1px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 0px 0px 7px -1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 7px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 11px -4px hsla(0, 0%, 48%, 0.5);
+  -webkit-box-shadow: 0px 0px 11px -4px hsla(0, 0%, 48%, 0.5);
+  -moz-box-shadow: 0px 0px 11px -4px hsla(0, 0%, 48%, 0.5);
 }
 
-.top .top--buttons {
+.top .top--buttons,
+.callouts .bottom .bottom--card__1 {
   margin-top: 3rem;
 }
 .top .top--buttons .top__one {
@@ -200,20 +205,49 @@ body {
   width: 5rem;
   font-weight: 500;
 }
-@media screen and (max-width: 1150px) {
-  .callouts {
-    top: 40rem;
-  }
-}
 
 @media screen and (max-width: 768px) {
   .callouts {
-    top: 60rem;
+    top: 145rem;
     width: 100%;
     padding: 0 3rem;
   }
   .top {
     padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .callouts {
+    top: 160rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .callouts {
+    top: 180rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .callouts {
+    top: 190rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .callouts {
+    top: 200rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .callouts {
+    top: 220rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  .callouts {
+    top: 265rem;
   }
 }
 
@@ -228,6 +262,7 @@ body {
     width: auto;
   }
 }
+
 @media screen and (max-width: 400px) {
   .top .top--buttons .top__one {
     padding: 1.8rem;
@@ -260,6 +295,7 @@ body {
   margin-top: 2.5rem;
 }
 
+/* ---------- Middle Callout -------- */
 .middle .middle--contents {
   gap: 1rem;
   text-align: left;
@@ -323,6 +359,66 @@ body {
     margin-left: 0;
   }
 }
+
+/* ------------- Bottom Callout ----------- */
+.callouts .bottom {
+  text-align: left;
+  line-height: 2;
+}
+
+.callouts .bottom .card {
+  border-radius: 1.5rem;
+  border: 1px solid hsla(0, 0%, 48%, 0.3);
+  padding: 2.5rem;
+}
+
+.callouts .bottom .card .card__heading p {
+  color: var(--primary-moderate);
+}
+
+.callouts .bottom .card .card__footer .flex {
+  gap: 1rem;
+}
+.callouts .bottom .card .card__footer h3 {
+  font-size: 3rem;
+}
+
+.callouts .bottom .card .card__footer button {
+  padding: 1.5rem 3rem;
+}
+
+.callouts .bottom .bottom--card__3 {
+  opacity: 0.4;
+}
+
+.callouts .bottom .bottom--card__3 button {
+  color: #fff;
+  background: var(--darkGray);
+}
+
+@media screen and (max-width: 768px) {
+  .callouts .bottom .card {
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 665px) {
+  .callouts .bottom .card .card__heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .callouts .bottom .card .card__footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+/* .callouts .bottom .bottom--card__3{
+
+} */
 /* .attribution {
   font-size: 11px;
   text-align: center;
