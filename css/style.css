@@ -151,10 +151,10 @@ body {
     gap: 1rem;
   }
   .header .header--logo {
-    width: 12rem;
+    width: 14rem;
   }
   .header .header--menu {
-    width: 2rem;
+    width: 2.5rem;
   }
 }
 
@@ -208,11 +208,11 @@ body {
 
 @media screen and (max-width: 768px) {
   .callouts {
-    top: 60rem;
+    top: 65rem;
     width: 100%;
     padding: 0 3rem;
   }
-  .top {
+  .callouts .top {
     padding: 2rem;
   }
 }
@@ -300,6 +300,7 @@ body {
   .middle .middle--contents {
     flex-direction: column;
     gap: 3rem;
+    padding: 2rem;
   }
   .middle .middle--contents {
     text-align: center;
