@@ -43,22 +43,6 @@
         </ul>
       </div>
     </header>
-    <!-- Modal Mobile Menu -->
-    <div class="modal" id="modal">
-      <div class="mobile--links animate" id="mobileLinks">
-        <ul>
-          <a href="#about">
-            <li class="border">About</li>
-          </a>
-          <a href="#">
-            <li class="border">Discover</li>
-          </a>
-          <a href="#">
-            <li>Get Started</li>
-          </a>
-        </ul>
-      </div>
-    </div>
     <!-- CALLOUTS -->
     <section class="callouts">
       <img
@@ -74,10 +58,20 @@
         <div class="top--buttons flex">
           <button class="top__one">Back this project</button>
           <button class="top__two flex" id="bookmark-button">
-            <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg " >
-              <g fill="none" fill-rule="evenodd" >
-                <circle fill="#2F2F2F" id="bookmarkOuter" cx="28" cy="28" r="28" />
-                <path fill="#B1B1B1" id="bookmarkInner" d="M23 19v18l5-5.058L33 37V19z" />
+            <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg ">
+              <g fill="none" fill-rule="evenodd">
+                <circle
+                  fill="#2F2F2F"
+                  id="bookmarkOuter"
+                  cx="28"
+                  cy="28"
+                  r="28"
+                />
+                <path
+                  fill="#B1B1B1"
+                  id="bookmarkInner"
+                  d="M23 19v18l5-5.058L33 37V19z"
+                />
               </g>
             </svg>
             <p id="bookmark__text">Bookmark</p>
@@ -177,6 +171,132 @@
         </div>
       </div>
     </section>
+
+    <!-- MODALS SECTION -->
+    <!-- Mobile Menu Modal -->
+    <div class="modal" id="modal">
+      <div class="mobile--links animate" id="mobileLinks">
+        <ul>
+          <a href="#about">
+            <li class="border">About</li>
+          </a>
+          <a href="#">
+            <li class="border">Discover</li>
+          </a>
+          <a href="#">
+            <li>Get Started</li>
+          </a>
+        </ul>
+      </div>
+    </div>
+    <!-- Back Project Modal -->
+    <div class="popup">
+      <div class="popup--body animate--2">
+        <svg
+          class="popup__close"
+          width="15"
+          height="15"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.314 0l2.828 2.828L9.9 7.071l4.243 4.243-2.828 2.828L7.07 9.9l-4.243 4.243L0 11.314 4.242 7.07 0 2.828 2.828 0l4.243 4.242L11.314 0z"
+            fill="#000"
+            fill-rule="evenodd"
+            opacity=".4"
+          />
+        </svg>
+        <h3>Back this project</h3>
+        <p>
+          Want to support us in bringing Mastercraft Bamboo Monitor Riser out in
+          the world?
+        </p>
+        <!-- Callout 1 -->
+        <div class="popup--callout">
+          <div class="popup--callout__heading">
+            <div id="circle">
+              <div id="inner"></div>
+            </div>
+            <div>
+              <h4>Pledge with no reward</h4>
+              <p id="first--text">
+                Choose to support us without a reward if you simply believe in
+                our project. As a backer, you will be signed up to receive
+                product updates via email.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Callout 2 -->
+        <div class="popup--callout forMargin">
+          <div class="popup--callout__heading">
+            <div id="circle">
+              <div id="inner"></div>
+            </div>
+            <div class="text">
+              <div class="text__top">
+                <h4>Bamboo Stand</h4>
+                <p id="one">Pledge $25 or more</p>
+                <div id="two" class="flex">
+                  <p id="first">101</p>
+                  <p>left</p>
+                </div>
+              </div>
+              <p>
+                You get an ergonomic stand made of natural bamboo. You've helped
+                us launch our promotional campaign, and you’ll be added to a
+                special Backer member list.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Callout 3 -->
+        <div class="popup--callout forMargin">
+          <div class="popup--callout__heading">
+            <div id="circle">
+              <div id="inner"></div>
+            </div>
+            <div class="text">
+              <div class="text__top">
+                <h4>Black Edition Stand</h4>
+                <p id="one">Pledge $75 or more</p>
+                <div id="two" class="flex">
+                  <p id="first">64</p>
+                  <p>left</p>
+                </div>
+              </div>
+              <p>
+                You get a Black Special Edition computer stand and a personal
+                thank you. You’ll be added to our Backer member list. Shipping
+                is included.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Callout 4 -->
+        <div class="popup--callout forMargin lastCallout">
+          <div class="popup--callout__heading">
+            <div id="circle">
+              <div id="inner"></div>
+            </div>
+            <div class="text">
+              <div class="text__top">
+                <h4>Mahogany Special Edition</h4>
+                <p id="one">Pledge $200 or more</p>
+                <div id="two" class="flex">
+                  <p id="first">0</p>
+                  <p>left</p>
+                </div>
+              </div>
+              <p>
+                You get two Special Edition Mahogany stands, a Backer T-Shirt,
+                and a personal thank you. You’ll be added to our Backer member
+                list. Shipping is included.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>

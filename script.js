@@ -12,7 +12,6 @@ menuBar.addEventListener("click", () => {
   }
 });
 
-localStorage.setItem("favorites", "hey");
 window.addEventListener("click", (event) => {
   if (
     event.target === document.getElementById("modal") ||
@@ -33,4 +32,20 @@ document.querySelector("#bookmark-button").addEventListener("click", () => {
   bookmarkText === "Bookmark"
     ? (document.querySelector("#bookmark__text").textContent = "Bookmarked")
     : (document.querySelector("#bookmark__text").textContent = "Bookmark");
+});
+
+// for the popup menu
+
+document.querySelector(".top__one").addEventListener("click", () => {
+  document.querySelector(".popup").style.display = "block";
+});
+
+document.querySelector(".popup__close").addEventListener("click", () => {
+  document.querySelector(".popup").style.display = "none";
+});
+
+window.addEventListener("click", (event) => {
+  if (event.target === document.querySelector(".popup")) {
+    document.querySelector(".popup").style.display = "none";
+  }
 });
