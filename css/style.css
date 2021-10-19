@@ -640,9 +640,15 @@ body {
     height: 2.1rem;
   }
 }
+
 @media screen and (max-width: 400px) {
   .popup .popup--body {
-    top: 100rem;
+    top: 81rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  .popup .popup--body {
+    top: 99rem;
   }
 }
 
