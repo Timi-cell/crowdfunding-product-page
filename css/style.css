@@ -642,10 +642,9 @@ body {
 }
 @media screen and (max-width: 400px) {
   .popup .popup--body {
-    top: 110rem;
+    top: 100rem;
   }
 }
-
 
 /* .attribution {
   font-size: 11px;
