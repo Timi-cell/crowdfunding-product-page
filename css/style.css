@@ -583,7 +583,7 @@ body {
 @media screen and (max-width: 768px) {
   .popup .popup--body {
     width: 95%;
-    top: 70rem;
+    top: 65rem;
   }
   .popup .popup--callout .popup--callout__heading #circle {
     width: 4.48rem;
@@ -617,7 +617,7 @@ body {
 
 @media screen and (max-width: 675px) {
   .popup .popup--body {
-    top: 80rem;
+    top: 70rem;
   }
   .popup .popup--callout .popup--callout__heading #circle {
     width: 5.5rem;
@@ -630,7 +630,7 @@ body {
     padding: 10rem;
   }
   .popup .popup--body {
-    top: 85rem;
+    top: 75rem;
   }
 }
 
@@ -642,7 +642,7 @@ body {
 }
 @media screen and (max-width: 400px) {
   .popup .popup--body {
-    top: 100rem;
+    top: 110rem;
   }
 }
 
