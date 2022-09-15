@@ -49,3 +49,6 @@ window.addEventListener("click", (event) => {
     document.querySelector(".popup").style.display = "none";
   }
 });
+
+// the section that appears when a project wants to be backed
+
